@@ -14,7 +14,7 @@ help:
 
 install: # Build and install the app and store in the local path
 	@cargo build --release
-	@cp target/release/kura /bin/
+	@cp target/release/kura ~/.local/bin/
 
 run: # Run the app package
 	@RUST_BACKTRACE=full RUST_LOG=info cargo run --release -p app
