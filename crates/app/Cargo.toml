@@ -7,4 +7,5 @@ edition = "2021"
 
 [dependencies]
 kura = { path = "../kura/" }
-clap = { version = "4.0.9", features = ["derive"] }
+clap = { version = "4.0.9", features = ["derive", "color"] }
+"
