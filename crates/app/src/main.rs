@@ -16,6 +16,21 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+mod args;
+use clap::Parser;
+use kura::Face;
+
 fn main() {
-    println!("Hello, world!");
+
+    let a: args::KuraParser = args::KuraParser::parse();
+    let filter: kura::KuraFilter = a.filter.into();
+    let image_path: String = a.image;
+    let output_path: String = a.output;
+    let intensity: u32 = a.intensity;
+    let model_path: String = a.model;
+
+    let mut f = Face::new(&model_path, &image_path);
+    let mut faces = f.get_faces();
+    faces.save(intensity, &output_path, &filter);
+ 
 }
