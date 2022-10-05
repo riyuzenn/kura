@@ -25,6 +25,7 @@ name = "app"
 version = "0.1.0"
 dependencies = [
  "clap 4.0.9",
+ "kura",
 ]
 
 [[package]]
