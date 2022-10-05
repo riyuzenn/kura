@@ -158,9 +158,6 @@ impl KuraFace {
             FilterType::Nearest,
         )    
     }
-
-
-
 }
 
 #[derive(Debug)]
