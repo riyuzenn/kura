@@ -4,6 +4,8 @@ Face detection & anonymizer tool written in Rust.
 
 ### Installation
 Build it using `nightly` instead.
+If you want to debug, use release since it'll take a 
+while to detect faces in debug mode
 
 ### Usage
 ```
