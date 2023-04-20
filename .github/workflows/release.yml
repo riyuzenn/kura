@@ -24,6 +24,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          EXTRA_FILES: "model/seeta_fd_frontal_v1.0.bin"
+          SRC_DIR: crates/app
+          # TOOLCHAIN_VERSION: nightly-x86_64-unknown-linux-gnu
+          EXTRA_FILES: model/seeta_fd_frontal_v1.0.bin
           RUSTTARGET: ${{ matrix.target }}
           ARCHIVE_TYPES: ${{ matrix.archive }}
