@@ -13,3 +13,9 @@ kura --filter <filter (optional): gaussian, pixelated, pixel-blur> \
       --model <path/to/model (optional)> 
        <path/to/image> <path/to/output>
 ```
+
+## Preview
+
+| Original                                      | Output                                            |
+|-----------------------------------------------|---------------------------------------------------|
+| <img src="../assets/test.png" height="256" /> | <img src="../assets/test_out.png" height="256" /> |
