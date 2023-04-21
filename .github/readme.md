@@ -1,6 +1,6 @@
 ## Kura
 
-Face detection & anonymizer tool written in Rust.
+Face detection & anonymizer tool written in Rust. It ain't perfect, but it works
 
 ### Installation
 Build it using `nightly` instead.
